@@ -1,4 +1,4 @@
-Cocktail API
+Cocktail Recipe API
 ============
 
 Cocktail is a simple tool for getting cocktail recipes. It returns the ingredients, instructions, and more of the cocktail.
@@ -7,12 +7,12 @@ Cocktail is a simple tool for getting cocktail recipes. It returns the ingredien
 ![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
 ![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Python API Wrapper for the [Cocktail API](https://apiverve.com/marketplace/api/cocktail)
+This is a Python API Wrapper for the [Cocktail Recipe API](https://apiverve.com/marketplace/api/cocktail)
 
 ---
 
 ## Installation
-	pip install apiverve-cocktail
+	pip install apiverve-cocktailrecipe
 
 ---
 
@@ -25,14 +25,14 @@ You can get it by signing up at [https://apiverve.com](https://apiverve.com)
 
 ## Usage
 
-The Cocktail API documentation is found here: [https://docs.apiverve.com/api/cocktail](https://docs.apiverve.com/api/cocktail).  
+The Cocktail Recipe API documentation is found here: [https://docs.apiverve.com/api/cocktail](https://docs.apiverve.com/api/cocktail).  
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
 
 ```
 # Import the client module
-from apiverve_cocktail.apiClient import CocktailAPIClient
+from apiverve_cocktailrecipe.apiClient import CocktailAPIClient
 
 # Initialize the client with your APIVerve API key
 api = CocktailAPIClient("[YOUR_API_KEY]")
@@ -188,7 +188,8 @@ print(result)
         "preparation": "Stir in mixing glass with ice cubes. Strain into chilled martini glass. Squeeze oil from lemon peel onto the drink, or garnish with olive."
       }
     ]
-  }
+  },
+  "code": 200
 }
 ```
 
